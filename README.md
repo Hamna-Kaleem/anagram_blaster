@@ -35,15 +35,12 @@ This project is a great example of how AI can accelerate game development, cutti
 
 3.Run the Flask app:
    ```bash
-   python app.py
-
+      python app.py
 4. Open your browser and go to http://127.0.0.1:5000
-
 5. Usage
    Enter your guess for the scrambled word.
    Submit your answer.
    Difficulty level adjusts automatically based on your performance.
    Keep playing to challenge yourself!
-
 6. Contributing
 Feel free to fork this repo and submit pull requests for improvements, new features, or bug fixes!

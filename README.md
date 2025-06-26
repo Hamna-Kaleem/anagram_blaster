@@ -28,3 +28,35 @@ Overall, the project took me about half the time I’d normally expect, thanks t
    ```bash
    git clone https://github.com/yourusername/anagram-blaster-2.git
    cd anagram-blaster-2
+2. Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the Flask app:
+
+bash
+Copy
+Edit
+python app.py
+Open your browser and go to http://127.0.0.1:5000
+
+Usage
+Enter your guess for the scrambled word.
+
+Submit your answer.
+
+Receive immediate feedback.
+
+Difficulty level adjusts automatically based on your performance.
+
+Keep playing to challenge yourself!
+
+AI Assistance & Development Notes
+I did some initial mind mapping and wrote basic game logic myself. The clean and efficient code was significantly aided by Amazon Q's AI development CLI. While the AI did great at code structure and logic, some repetitive styling and JavaScript patterns emerged which I left as-is for simplicity.
+
+This project is a great example of how AI can accelerate game development, cutting down build time significantly.
+
+Contributing
+Feel free to fork this repo and submit pull requests for improvements, new features, or bug fixes!

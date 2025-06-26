@@ -36,7 +36,9 @@ This project is a great example of how AI can accelerate game development, cutti
 3.Run the Flask app:
    ```bash
       python app.py
+
 4. Open your browser and go to http://127.0.0.1:5000
+
 5. Usage
    Enter your guess for the scrambled word.
    Submit your answer.

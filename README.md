@@ -1,4 +1,4 @@
-# Anagram Blaster 2.0
+# Anagram Blaster 2.0 using AMAZON Q Developer CLI on VSCODE Windows 
 
 Anagram Blaster 2.0 is a fun and engaging word scramble game built with Python Flask and JavaScript. This version is an enhanced update of my original Anagram game, featuring difficulty levels, validation against a dictionary API, and dynamic difficulty adjustment based on player performance.
 

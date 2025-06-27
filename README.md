@@ -9,6 +9,8 @@ Overall, the project took me about half the time I’d normally expect, thanks t
 I did some initial mind mapping and wrote basic game logic myself. The clean and efficient code was significantly aided by Amazon Q's AI development CLI. While the AI did great at code structure and logic, some repetitive styling and JavaScript patterns emerged which I left as-is for simplicity.
 This project is a great example of how AI can accelerate game development, cutting down build time significantly.
 
+![Anagram Blaster Demo](./anagram-blaster-demo.gif)
+
 ## Features
 
 - Multiple difficulty levels: Easy, Medium, Hard

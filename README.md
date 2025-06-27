@@ -20,10 +20,6 @@ This project is a great example of how AI can accelerate game development, cutti
 - Responsive and retro-inspired UI using Google Pixel font
 - Clean and modular codebase with Flask backend and JS frontend
 
-## Demo
-
-![Demo Screenshot](demo-screenshot.png)  
-*(Add a screenshot or GIF of your game here)*
 
 ## Installation
 

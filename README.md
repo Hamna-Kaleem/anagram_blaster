@@ -44,5 +44,4 @@ This project is a great example of how AI can accelerate game development, cutti
    Submit your answer.
    Difficulty level adjusts automatically based on your performance.
    Keep playing to challenge yourself!
-6. Contributing
-Feel free to fork this repo and submit pull requests for improvements, new features, or bug fixes!
+6. Read the full blog: [Link](https://untitled-drafts.hashnode.dev/building-anagram-blaster-my-retro-game-journey-with-amazon-q-dev-cli?showSharer=true)

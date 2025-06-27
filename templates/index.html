@@ -1,0 +1,142 @@
+<!-- 
+ I’m building a retro-style browser game called "Anagram Blaster" using Flask. 
+ I want you to generate the full content of the index.html file 
+ using the following requirements:
+ 
+ Use proper HTML5 structure.
+ Load the "Press Start 2P" Google font.
+ Use a retro arcade theme with:
+    Dark background (#000)
+    Neon and pixel-art style colors (#0ff, #ff0, #f0f, etc.)
+    Centered layout, responsive design
+ The layout should include:
+    A main title (Anagram Blaster)
+    A div to show the scrambled word
+    A text input and a submit button 
+    A score display 
+    A difficulty display
+    A feedback message 
+    Link to external CSS 
+    Link to JS using Flask’s url_for.
+
+    Include internal CSS in the <style> block for retro theme and mobile responsiveness.
+ Use proper HTML5 structure. Make it centered and responsive.
+ Return only the full content of `templates/index.html`. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anagram Blaster</title>
+
+    <!-- Google Pixel Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #0ff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+        }
+
+        #game-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            color: #f0f;
+            margin-bottom: 40px;
+            text-shadow: 0 0 5px #f0f;
+        }
+
+        #scrambled-word {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff0;
+            text-shadow: 0 0 5px #ff0;
+        }
+
+        input[type="text"] {
+            font-size: 1.2em;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 15px;
+            background-color: #111;
+            color: #0f0;
+            border: 2px solid #0f0;
+            outline: none;
+        }
+
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #0f0;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0c0;
+        }
+
+        #score,
+        #feedback {
+            font-size: 1em;
+            margin-top: 25px;
+        }
+
+        #feedback {
+            min-height: 24px;
+        }
+
+        @media (max-width: 600px) {
+            input[type="text"] {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="game-container">
+        <h1>Anagram Blaster</h1>
+        <div id="scrambled-word">Loading...</div>
+
+        <input type="text" id="user-input" placeholder="Type your answer here..." autocomplete="off" />
+        <br />
+        <button id="submit-button">Submit</button>
+
+        <div id="score">Score: 0</div>
+
+        <div id="difficulty">Difficulty: Medium</div>
+
+        <div id="feedback"></div>
+    </div>
+
+    <!-- External JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
+
+<!-- End of index.html -->
+<!-- This is the end of the index.html file for the Anagram Blaster game. -->
+<!-- The HTML structure is complete and ready for use in a Flask application. -->
+<!-- The above HTML code provides a complete structure for the Anagram Blaster game, including styles and responsive design. -->

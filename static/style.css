@@ -1,0 +1,183 @@
+/* Create a retro-style CSS for the "Anagram Blaster" game. Style features:
+
+1. Use "Press Start 2P" Google Font
+2. Dark arcade background (#000 or #111)
+3. Neon-colored text and buttons (lime green, neon blue, magenta)
+4. Center-align all content, use large text
+5. Make it mobile-friendly and responsive
+6. Style feedback messages (green for correct, red for wrong, yellow for invalid)
+
+Return only the content of `static/style.css`. */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', monospace, cursive;
+    background-color: #111;
+    color: #00FF00;
+    /* Lime green */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+button {
+    background-color: #00FF00;
+    /* Lime green */
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00CC00;
+    /* Darker lime green on hover */
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 2px solid #00FF00;
+    /* Lime green */
+    background-color: #222;
+    /* Dark background */
+    color: #00FF00;
+    /* Lime green text */
+    outline: none;
+}
+
+.feedback {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.correct {
+    color: #00FF00;
+    /* Green for correct */
+}
+
+.wrong {
+    color: #FF0000;
+    /* Red for wrong */
+}
+
+.invalid {
+    color: #FFFF00;
+    /* Yellow for invalid */
+}
+
+/* Container for game content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #00FF00;
+    /* Lime green border */
+    border-radius: 10px;
+    background-color: #222;
+    /* Dark background */
+}
+
+/* Anagram list styles - you can add this in your HTML if you want a list */
+.anagram-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.anagram-list li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #FF00FF;
+    /* Magenta */
+}
+
+.anagram-list li button {
+    background-color: #00FFFF;
+    /* Neon blue */
+    color: #111;
+    margin-left: 10px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P', monospace, cursive;
+    font-size: 1em;
+}
+
+.anagram-list li button:hover:not(:disabled) {
+    background-color: #00CCCC;
+    /* Darker neon blue */
+}
+
+.anagram-list li button:disabled {
+    background-color: #555;
+    /* Grey for disabled */
+    cursor: not-allowed;
+}
+
+/* Focus states for accessibility */
+.anagram-list li button:focus-visible {
+    outline: 2px solid #00FFFF;
+    box-shadow: 0 0 5px #00FFFF;
+}
+
+.anagram-list li button:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    h1,
+    h2 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 8px 16px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .feedback {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    input[type="text"] {
+        width: 95%;
+        font-size: 1em;
+    }
+
+    .feedback {
+        font-size: 1em;
+    }
+}
